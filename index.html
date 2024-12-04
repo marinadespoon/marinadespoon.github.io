@@ -1,1136 +1,217 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QA Jones Stetsko</title>
 
-	<!--- basic page needs
-   ================================================== -->
-	<meta charset="utf-8">
-	<title>Anand Bhagwat</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
 
-	<!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&family=Source+Sans+3:wght@300;900&display=swap" rel="stylesheet">
 
-	<!-- CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
-
-	<!-- script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
-
-	<!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-
-<body id="top">
-
-	<!-- header 
-   ================================================== -->
+<body>
 	<header>
-		<div class="row">
+        <div class="logo">
+            <!-- <img src="images\qa_jones.png" alt=""> -->
+        </div>
+        <button class="nav-toggle" arial-lavel="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav_item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav_item"><a href="#services" class="nav__link">Skills</a></li>
+                <li class="nav_item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav_item"><a href="#work" class="nav__link">Experience</a></li>
+                <li class="nav_item"><a href="#education" class="nav__link">Education</a></li>
+                <li class="nav_item"><a href="#contacts" class="nav__link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-			<div class="top-bar">
-				<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-				<div class="logo">
-					<a href="index.html">Anand Bhagwat</a>
-				</div>
-
-				<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll" href="#about" title="">About</a></li>
-						<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll" href="#services" title="">Services</a></li>
-						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-					</ul>
-				</nav>
-			</div> <!-- /top-bar -->
-
-		</div> <!-- /row -->
-	</header> <!-- /header -->
-
-	<!-- intro section
-   ================================================== -->
-	<section id="intro">
-
-		<div class="intro-overlay"></div>
-
-		<div class="intro-content">
-			<div class="row">
-
-				<div class="col-twelve">
-
-					<h5>Привет! Я - Марина 👋</h5>
-					<h1>.</h1>
-
-					<p class="intro-position">
-						<span>Искатель багов </span>
-						<span>Разрушитель иллюзий </span>
-						<span>Хранитель качества</span>
-					</p>
-
-					<a class="button stroke smoothscroll" href="#about" title="">Больше обо мне</a>
-
-				</div>
-
-			</div>
-		</div> <!-- /intro-content -->
-
-		<ul class="Контакты">
-			<li><a href="mailto:ваш_почтовый_адрес">Email</a></li>
-		</ul> <!-- /intro-social -->
-
-	</section> <!-- /intro -->
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Jones Stetsko</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">QA Engineer</p>
+        <img src="images\qa-jones-01.jpg" alt="a picture of Jones smiling" class="intro__img">
+    </section>
 
 
-	<!-- about section
-   ================================================== -->
-	<section id="about">
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">Skills</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Experienced</h3>
+                <p><b>Manual testing</b> <i>(Functional & Non-Functional, Exploritary, UAT)</i> / <b>Desktop, Web testing</b> 
+                   / <b>Test Management</b> <i>(Setting up test processes, Interviewing candidates, Onbording newcomers)</i> 
+                   / <b>Jira, Azure DevOps Server</b> 
+                   / <b>Business Analysis</b> <i>(Creating initial requirements, Communication with customers)</i> 
+                   / <b>Test and Release Documentation</b> <i>(Test Plans & Reports, Verification and Validetion Reports, Resolved & Unresolved bug charter)</i></p>
+            </div> <!-- / service -->
 
-		<div class="row section-intro">
-			<div class="col-twelve">
+            <div class="service">
+                <h3>Basic</h3>
+                <p><b>Automated testing</b> <i>(Creating simple E2E test cases, Selenium, pytest, XPath)</i> 
+                    / <b>Python</b> <i>(Basic knowledge, able to create simple scripts for automation)</i> / 
+                    <b>JavaScript</b> <i>(Basic knowledge)</i>/ <b>HTML, CSS</b> <i>(I made this site by myself)</i> / <b>Git</b> <i>(GitHub)</i></p>
+            </div> <!-- / service -->
+            
+            <div class="service">
+                <h3>Had experience with:</h3>
+                <p><b>Postman</b> <i>(API testing)</i> / <b>UI automation with C#</b> <i>Selenium</i> / <b>Mobile testing</b> <i>(Web-applucation)</i> / <b>Maintenance of unit tests</b> <i>(White-box testing of python-scripts)</i>/ <b>Working with Virtual Machins</b> <i>(Virtual Box)</i> / <b>Familiar with Linux OS</b> <i>(CentOS, Ubuntu)</i> / <b>JSON</b> <i>(basic knowladge)</i> / <b>Bash</b> <i>(basic commands)</i></p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
 
-				<h5>Обо мне</h5>
-				<h1></h1>
+        <a href="#work" class="btn">My Work</a>
+    </section>
 
-				<div class="intro-info">
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section_title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">QA Engineer based out of Vienna</p>
 
-					<img src="images/06604-index (1).jpg" alt="Profile Picture">
+        <div class="about-me__body">
+            <p>As a QA engineer with 6 years of experience, I have manual and automated testing skills. Throughout my career, I have been responsible for applying test methodologies, designing tests, and writing test documentation for a wide range of web and desktop applications at various stages of the SDLC. In addition, I have experience in test management, training and support of newcomers, and partially in business analysis.</p>
+            <p>I am currently studying for a bachelor's degree in mathematics at the University of Vienna. This educational journey has developed my problem-solving, critical and analytical thinking abilities, skills that are very valuable in the field of software testing. My academic background in math and medicine also helps me to create high quality products.</p>
+            <p>I am originally from Ukraine. Living in Vienna for the past 2.5 years, I've had the opportunity to immerse myself in a different cultural and professional environment, broadening my horizons. Although my native language is Ukrainian, I have been working and communicating primarily in English for the past 5 years due to the multicultural work environment. I am also actively learning German, despite limited opportunities for practice, I am committed to continuously improving this skill.</p>
+        </div>
 
-					<p class="lead">"Способна находить баги даже там, где их нет, предугадывать поведение пользователей и предсказывать сбои до их появления.  Более 2 лет поиска идеальных дефектов в самых неожиданных местах. "</p> 
-				</div>
+        <img src="images\qa-jones-03.jpg" alt="Jones is dodik" class="about-me__img">
+    </section>
 
-			</div>
-		</div> <!-- /section-intro -->
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--my-work">Experience</h2>
+        <p class="section__subtitle"></p>
 
-		<div class="row about-content">
-
-			<div class="col-six tab-full">
-
-				<h3>Profile</h3>
-				<p> </p>
-
-				<ul class="info-list">
-					<li>
-						<strong>FПолное имя:</strong>
-						<span>Ложкина Марина Сергеевна</span>
-					</li>
-          <li>
-						<strong>FИмя для друзей и коллег:</strong>
-						<span>Ложка🥄</span>
-					</li>
-					<li>
-						<strong>Специализация:</strong>
-						<span>Ручное тестирование, исследование интерфейсов, вскрытие скрытых ошибо</span>
-					</li>
-					<li>
-						<strong>Email:</strong>
-						<span>marinadespoon@gmail.com</span>
-					</li>
-
-				</ul> <!-- /info-list -->
-<!-- Service Start -->
-<section class="section bg-light" id="services">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="container-title text-center mb-4 pb-2">
-                    <div class="titles">
-                        <h2 class="title mb-4">Навыки и стек</h2>
-                        <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Во время работы я
-                            использую следующий стек инструментов и технологий:</p>
-                        <span></span>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="services-icon text-primary mb-3">
-                        <i data-feather="monitor" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Developer Tools в браузере</h3>
-                        <p class="text-light-muted mb-4">Для тестирования front-части web-приложений</p>
-                    </div>
-                </div>
+        <div class="portfolio">
+            <div class="portfolio__item portfolio__item--mtrls">
+                <a href="https://www.materialise.com/en"><img src="images/materialise-logo.png" alt="materialise" class="portfolio__img portfolio__img--mtrls"></a>
+                <h3 class="section__title--role">QA Engineer</h3>
+                <p class="section__subtitle--period">November 2018 – March 2021 (Kyiv) / March 2021 - February 2023 (remote).</p>
+                <ul>
+                    <li>participation in all stages of development: requirement testing, test planning, test design, test execution, test analysis.</li>
+                    <li>creating and maintaining QA artifacts: test plans/reports, bug reporting/tracking, validation, and verification documentation.</li>
+                    <li>functional analysis, requirements creation and elicitation, customer collaboration.</li>
+                    <li>executing manual and auto testing.</li>
+                    <li>testing Web/Desktop application.</li>
+                    <li>participation in everyday activity on scrum methodology.</li>
+                    <li>conducting interviews with candidates.</li>
+                    <li>mentoring, supporting, and onboarding of newcomers.</li>
+                </ul>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="services-icon text-primary mb-3">
-                        <i data-feather="feather" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Postman</h3>
-                        <p class="text-light-muted mb-4">Для тестирования API и написания автотестов</p>
-                    </div>
-                </div>
+            
+            <div class="portfolio__item portfolio__item--mgg">
+                <a href="https://megogo.net/en"><img src="images/megogo-logo.svg" alt="megogo" class="portfolio__img portfolio__img--mgg"></a>
+                <h3 class="section__title--role">QA Engineer</h3>
+                <p class="section__subtitle--period">October 2017 - October 2018</p>
+                <ul>
+                    <li>requirements testing, test planning, design, preparation, execution and analyzing results.</li>
+                    <li>bug investigation, reporting and tracking during lifecycle.</li>
+                    <li>executing manual testing (desktop/mobile websites)</li>
+                    <li>testing the application of advertising service platforms.</li>
+                    <li>testing Content Management System.</li>
+                </ul>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="services-icon text-primary mb-3">
-                        <i data-feather="disc" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Swagger</h3>
-                        <p class="text-light-muted mb-4">Для тестирования API и документации по API</p>
-                    </div>
-                </div>
+                        
+            <div class="portfolio__item portfolio__item--dentist">
+                <img src="images/teeth-logo.svg" alt="teeth" class="portfolio__img portfolio__img-teeth">
+                <h3 class="section__title--role">Dentist &#9679 Private/State Dental Clinics Kyiv</h3>
+                <p class="section__subtitle--period">September 2007 – August 2017</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Ecperience section -->
+    <section class="education education__cources" id="education">
+        <h2 class="section__title section_title--education">Education</h2>
+        <p class="section__subtitle section__subtitle--education">Courses</p>
+
+        <div class="education__body education__body--education">
+            <ul>
+                <li>100 Days of Code: The Complete Python Pro Bootcamp for 2022, Udemy.com <i>(September 2022 to present)</i></li>
+                <li>Improve Your Test Automation with Python Skills, LinkedIn Learning <i>(July-August 2022)</i></li>
+                <li>Software Testing Foundations: Test Management, LinkedIn Learning <i>(June-July 2021)</i></li>
+                <li>Agile Testing, LinkedIn Learning <i>(May 2021)</i></li>
+                <li>Product Owner Fundamentals - Foundations of Product Ownership, pluralsight.com <i>(September 2019)</i></li>
+                <li>Python scripting for Software Testers, Udemy.com <i>(June 2018)</i></li>
+                <li>JavaScript Basics, lynda.com <i>(May 2015)</i></li>
+                <li>HTML/CSS, codeacademy.com <i>(March 2015)</i></li>
+                <li>Quality assurance and testing of software, SkillUp school (Kyiv) <i>(Apr-May 2015)</i></li>
+            </ul>
+        </div>
+
+        <img src="images\qa-jones-04.jpg" alt="Jones is dodik" class="education__img">
+    </section>
+
+    <section class="education education__uni">
+        <h2 class="section__title section_title--education"></h2>
+        <p class="section__subtitle section__subtitle--education">University Education</p>
+        
+        <div class="education__body education__body--education">
+            
+            <ul>
+                <li>Bachelor’s degree in mathematics, Universität Wien <i>(March 2023 - Present)</i></li>
+                <li>Non-degree Student, Universität Wien <i>(March 2021 – February 2023)</i></li>
+                <li>Master of Business Administration, Kyiv National University of Economics <i>(September 2008 – October 2010)</i>(September 2008 – October 2010)</li>
+                <li>Oral/Maxillofacial Surgery, Shupyk National Medical Academy of Postgraduate Education (NMAPE), Kyiv <i>(January 2012 – June 2012)</i></li>
+                <li>General Dental Practice, National Medical University O.O. Bogomolets, Kyiv <i>(September 2002 - June 2007)</i></li>
+            </ul>
+        </div>
+
+        <img src="images\qa-jones-05.jpg" alt="Jones is dodik" class="education__img">
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+        <a href="mailto:doc.stetsko@gmail.com" class="footer__link">doc.stetsko@gmail.com</a>
+        <p class="footer__mob">+43 676 412 9538</p>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/jones-st">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/yevhenstetsko/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/jones_zauber/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com/doc.stetsko">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://t.me/stetskojones">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="script/index.js"></script>
 
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="services-icon text-primary mb-3">
-                        <i data-feather="layout" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">MySQL</h3>
-                        <p class="text-light-muted mb-4">Просмотр данных в БД и написание SQL-запросов</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="services-icon text-primary mb-3">
-                        <i data-feather="watch" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">REST-API, SOAP</h3>
-                        <p class="text-light-muted mb-4">Использование в процессе тестирования обмена данными</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Yandex Tracker</h3>
-                        <p class="text-light-muted mb-4">Организация ежедневной работы и написание багрепортов</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Test IT</h3>
-                        <p class="text-light-muted mb-4">Написание тест-кейсов</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Charles</h3>
-                        <p class="text-light-muted mb-4">Тестирование front-end / back-end</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Kibana</h3>
-                        <p class="text-light-muted mb-4">Просмотр логов приложений</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">HTML, CSS</h3>
-                        <p class="text-light-muted mb-4">Тестирование front-end</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Figma</h3>
-                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Pixel perfect</h3>
-                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div><!-- end row -->
-    </div>
-</section>
-
-
-<div class="col-six tab-full">
-
-				<h3>Skills</h3>
-				<p>My expertise is in Software QA Domain. As a QA person, I have Tested Web-based, Mobile applications as well
-					as client server applications with both Automated and Manual. I also posses experience of Software Application
-					deployment on Windows, Linux Operating system using CI-CD tools.</p>
-
-				<ul class="skill-bars">
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Software Quality Assurance</strong>
-					</li>
-					<li>
-						<div class="progress percent75"><span>75%</span></div>
-						<strong>Selenium WebDriver</strong>
-					</li>
-					<li>
-						<div class="progress percent70"><span>65%</span></div>
-						<strong>API and Mobile Testing</strong>
-					</li>
-					<li>
-						<div class="progress percent50"><span>50%</span></div>
-						<strong>Linux , CI-CD and DevOps</strong>
-					</li>
-
-				</ul> <!-- /skill-bars -->
-
-			</div>
-
-		</div>
-
-		<div class="row button-section">
-			<div class="col-twelve">
-				<a href="#contact" title="Reach Me Now" class="button stroke smoothscroll">Contact Now</a>
-				<a href="https://www.linkedin.com/in/anand-bhagwat/" title="LinkedIN Profile" class="button button-primary">LinkedIN Profile
-				</a>
-			</div>
-		</div>
-
-	</section> <!-- /process-->
-
-
-	<!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>Resume</h5>
-				<h1>Profile Summary.</h1>
-
-				<p class="lead">A dynamic professional with 5+ years of experience in the areas of Software Quality Assurance.
-					Having Hands on experience in Automation Testing, Manual Testing, of Web, API and Mobile and various testing techniques like User
-					Interface Testing, Functionality Testing, Regression Testing, Performance Testing, System Integration Testing, and
-					Installation and Upgrade Testing. Well acquainted with Software Development Life Cycle (SDLC), Software Testing
-					Life Cycle (STLC)emerging software disciplines like DevOps and AGILE software development.
-				</p>
-
-			</div>
-		</div> <!-- /section-intro-->
-
-		<div class="row resume-timeline">
-
-			<div class="col-twelve resume-header">
-
-				<h2>Work Experience</h2>
-
-			</div> <!-- /resume-header -->
-
-			<div class="col-twelve">
-
-				<div class="timeline-wrap">
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Software QA Engineer</h3>
-							<p>2020 - Present</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Confidential [Finance Domain]</h4>
-							<p>As a Software QA Working in Finance domain Mobile Application
-								and API Application Testing with Manual and Automation and
-								supporting CI-CD for QA Automation.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Software QA-CI Developer</h3>
-							<p>2019 - 2020</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>QiO Technologies</h4>
-							<p>As a Software QA and CI Engineer in QiO, 
-								Continuous Integration Developer for Automation, 
-								Performance Testing using LoadRunner and API Testing 
-								using RestAssured and Postman with Jenkins.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Software QA Engineer</h3>
-							<p>2018 - 2019</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Qualys Inc.</h4>
-							<p>As a Software QA Engineer in Qualys, where my primary responsibility includes end-to-end Testing of Qualys's
-								Cloud Security Module products such as "File Integrity Monitoring" and "Indication of Compromise" which are
-								cloud-based service that gives you immediate, global visibility into where your IT systems might be vulnerable
-								to the latest Internet threats and how to protect them.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Software QA Analyst</h3>
-							<p>2016 - 2018</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>PTC Software India Pvt.ltd</h4>
-							<p>As a Software QA Analyst in PTC Software I have worked on PTC's Product Lifecycle Management software FlexPLM
-								which is used to address the needs of the Retail, Footwear, and Apparel Industry. I have worked in diverse areas of Software application testing.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Software Quality Assurance Intern</h3>
-							<p>2015 - 2016</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>PTC Software India Pvt.ltd</h4>
-							<p>As a Quality Assurance internship in PTC Software I have worked on Installation of Windchill + FlexPLM,
-								Functional Testing , patch installation, qualification.Automation of FlexPLM Scripts using Selenium WebDriver,
-								Upgrade Testing for Sizing patch and for FlexPLM.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-				</div> <!-- /timeline-wrap -->
-
-			</div> <!-- /col-twelve -->
-
-		</div> <!-- /resume-timeline -->
-
-		<div class="row resume-timeline">
-
-			<div class="col-twelve resume-header">
-
-				<h2>Education</h2>
-
-			</div> <!-- /resume-header -->
-
-			<div class="col-twelve">
-
-				<div class="timeline-wrap">
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Masters of Computer Application</h3>
-							<p>July 2013 - June 2016</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Savitribai Phule Pune University</h4>
-							<p>Master of Computer Applications (MCA) is a three-year professional Master's Degree in computer science
-								awarded in India. The course was designed to meet the growing demand for qualified professionals in the field
-								of Information Technology.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>Bachelor of Computer Science</h3>
-							<p>July 2010 - June 2013</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>SRTM University Nanded</h4>
-							<p>The course is a bachelor’s level program in the area of computer science which encompasses important areas
-								like programming, software, hardware, and networks under its ambit.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>HSC 12th</h3>
-							<p>May 2008 - June 2010</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Maharashtra Board</h4>
-							<p>The HSC 12th standard exam conducted by the Maharashtra State Board of Secondary & Higher Secondary Education
-								or MSBSHSE is popularly known as the Maharashtra HSC Board Exam. The 12th
-								science includes Physics, Chemistry, Mathematics and Biology.</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-
-				</div> <!-- /timeline-wrap -->
-
-			</div> <!-- /col-twelve -->
-
-		</div> <!-- /resume-timeline -->
-
-	</section> <!-- /features -->
-
-
-	<!-- Portfolio Section
-   ================================================== -->
-	<section id="portfolio">
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>Portfolio</h5>
-				<h1>Check Out Some of My Works.</h1>
-
-				<p class="lead">I am passionate software QA Tester who believes in learning the basics of every technology which
-					helps Quality Assurance Tester to make their life easy and more productive. Also I look for an opportunity to best
-					use the available tools and technology, besides working at my office , in the leisure time of my day and weekend I
-					spend learning new
-					things and share with my linkedin connection</p>
-
-			</div>
-		</div> <!-- /section-intro-->
-
-		<div class="row portfolio-content">
-
-			<div class="col-twelve">
-
-				<!-- portfolio-wrapper -->
-				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/liberty.png" alt="Liberty">
-							<a href="#modal-01" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Docker For Tester</h3>
-										<span class="folio-types">
-											Meetup Talk
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/shutterbug.png" alt="Shutterbug">
-							<a href="#modal-02" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Amazon Web Service</h3>
-										<span class="folio-types">
-											Video Series
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/clouds.png" alt="Clouds">
-							<a href="#modal-03" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">API Testing</h3>
-										<span class="folio-types">
-											API Testing
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/beetle.png" alt="Beetle">
-							<a href="#modal-04" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Meetup</h3>
-										<span class="folio-types">
-											Meetup Speaker
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<!-- modal popups - begin
-	            ============================================================= -->
-					<div id="modal-01" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-liberty.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Docker For Tester</h4>
-							<p> I have done some study and come up with very basic knowledge about docker, I shared this with all of my
-								LinkedIN connection. I also part of Software Testing Board Meetup as speaker</p>
-
-							<div class="categories">Web Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://www.linkedin.com/feed/update/urn:li:activity:6479922081717948416">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-01 -->
-
-					<div id="modal-02" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-shutterbug.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Amazon Web Services</h4>
-							<p>I have created a short getting started hands-on guide video on one of the leading cloud service provider
-								Amazon web services, I hope this short series will help you start your journey from Basic with cloud and AWS.</p>
-
-							<div class="categories">Amazon Web Services</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://www.linkedin.com/feed/update/urn:li:activity:6476858048467042304">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-02 -->
-
-					<div id="modal-03" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-clouds.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>API Testing</h4>
-							<p>API testing is important for any application Testing, being a QA we should have the basic understanding about
-								how to test the API's available. There are many tools available on the internet. But, do you know without using
-								them we can test our API through command line as well:
-								I have created a short video on API testing from Command line -Using CURL. lets see how can we test API's using
-								command line..</p>
-
-							<div class="categories">API Testing</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://www.linkedin.com/feed/update/urn:li:activity:6476858048467042304/">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-03 -->
-
-					<div id="modal-04" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-beetle.png" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Meetup Speaker</h4>
-							<p>I also an active member of Software Testing Board Meetup as speaker on Docker for Software Tester.</p>
-
-							<div class="categories">Meetup Speaker</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://youtu.be/EL-HJInpvg4">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-04 -->
-
-
-					<!-- modal popups - end
-	            ============================================================= -->
-
-				</div> <!-- /portfolio-wrapper -->
-
-			</div> <!-- /twelve -->
-
-		</div> <!-- /portfolio-content -->
-
-	</section> <!-- /portfolio -->
-	<!-- services Section
-   ================================================== -->
-	<section id="services">
-
-		<div class="overlay"></div>
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>Skill-set</h5>
-				<h1>What Can I Do For You?</h1>
-
-				<p class="lead">I can help and contribute in improving the Software application quality, Quality should be achieved
-					with dedicated
-					focus on the software behavior and finding the flaws that are not as per the end user requirement,I am continually
-					focusing on the improving Quality of the Software</p>
-
-			</div>
-		</div> <!-- /section-intro -->
-
-		<div class="row services-content">
-
-			<div id="owl-slider" class="owl-carousel services-list">
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-earth"></i></span>
-
-					<div class="service-content">
-
-						<h3>Software Quality Assurance</h3>
-
-						<p class="desc">Quality assurance is a systematic set of activities carried out to make sure that the delivered
-							product
-							is error-free and no glitch exists in the application. The absence of QA can lead to the risk of delivering the
-							application with
-							a glitch. And this is my strong area of expertise and I am continually learning and focusing on it to improve it.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-window"></i></span>
-
-					<div class="service-content">
-
-						<h3>Automation Testing</h3>
-
-						<p class="desc">Automated tests perform the same steps precisely every time they are executed and never forget to
-							record detailed results. Testers
-							freed from repetitive manual tests have more time to create new automated software tests and deal with complex
-							features. I have good experience of Automated testing with Selenium WebDriver and I have worked on understanding
-							hands-on knowledge
-							on new testing tools and API's like Katalon Studio, Jmeter, Selenium rest-assured.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-paint-brush"></i></span>
-
-					<div class="service-content">
-
-						<h3>API Testing</h3>
-
-						<p class="desc">APIs, or application program interfaces, are vital tools for businesses in all industries. They
-							are a means by which two different programs are able to communicate and testing of these API is vital part
-							of any application since all the business knowledge in dependant on them, I am having good understanding of API
-							and web-service level testing and
-							very good grasp on HTTP Methods, HTTP status code and automated tools like Postman, SoapUI, Curl.
-
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>
-
-					<div class="service-content">
-
-						<h3>Software Installation and Deployment</h3>
-
-						<p class="desc">It is very important to make sure that user does not face any difficulties while installing the
-							software.For Enterprise applications (desktop or windows based), it always requires proper installation and
-							configuration testing prior to product release to avoid risk of facing installation errors, miss configurations
-							on customer
-							environments. I am having experience in entire Installation and
-							deployment scenarios and I posses a good understanding about DevOps.
-
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-image"></i></span>
-
-					<div class="service-content">
-
-						<h3>Linux and Docker</h3>
-
-						<p class="desc">Linux is the best-known and most-used open source operating system. As an operating system, Linux
-							is
-							software that sits underneath all of the other software on a computer And Lightweight footprint and minimal
-							overhead –
-							Docker images are typically very small, which facilitates rapid delivery and reduces the time to deploy new
-							application containers. Simplified maintenance – Docker reduces effort and risk of problems with application
-							dependencies. I posses a very good grasp on these technology and they come handy while testing the software. </p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-
-			</div> <!-- /services-list -->
-
-		</div> <!-- /services-content -->
-
-	</section> <!-- /services -->
-
-
-	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
-
-		<div class="row">
-			<div class="col-twelve">
-
-				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-pencil-ruler"></i>
-						</div>
-
-						<h3 class="stat-count">
-							8
-						</h3>
-
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							4
-						</h3>
-
-						<h5 class="stat-title">
-							Served Companies
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-badge"></i>
-						</div>
-
-						<h3 class="stat-count">
-							5
-						</h3>
-
-						<h5 class="stat-title">
-							Certifications
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							5
-						</h3>
-
-						<h5 class="stat-title">
-							Meetup Speaker
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-projector"></i>
-						</div>
-
-						<h3 class="stat-count">
-							3
-						</h3>
-
-						<h5 class="stat-title">
-							Meetup
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							5
-						</h3>
-
-						<h5 class="stat-title">
-							years of experience
-						</h5>
-
-					</div> <!-- /stat -->
-
-				</div> <!-- /stats-list -->
-
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
-
-	</section> <!-- /stats -->
-
-
-	<!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>Contact</h5>
-				<h1>Feel free to contact me.</h1>
-
-				<p class="lead"> I am always available to share and learn from all of you. And always eager to solve and help.
-					Feel free to reach out to me or drop me a message on linkedin, Mobile or email me.
-				</p>
-
-			</div>
-		</div> <!-- /section-intro -->
-
-		<div class="row contact-info">
-
-			<div class="col-four tab-full">
-
-				<div class="icon">
-					<i class="icon-pin"></i>
-				</div>
-
-				<h5>Where to find me</h5>
-
-				<p><a href="https://www.linkedin.com/in/anand-bhagwat/">LinkedIN</a><br>
-				</p>
-
-			</div>
-
-			<div class="col-four tab-full collapse">
-
-				<div class="icon">
-					<i class="icon-mail"></i>
-				</div>
-
-				<h5>Email Me At</h5>
-
-				<p style="color:white"><a href="mailto:anandbhagwatt3@gmail.com?Subject=Hello Anand%20again" font-color="white" target="_top">anandbhagwatt3@gmail.com</a><br>
-					<p style="color:white"><a href="mailto:anandbhagwatdevops@gmail.com?Subject=Hello Anand%20again" font-color="white" target="_top">anandbhagwatdevops@gmail.com</a>
-				</p>
-
-			</div>
-
-			<div class="col-four tab-full">
-
-				<div class="icon">
-					<i class="icon-phone"></i>
-				</div>
-
-				<h5>Call Me At</h5>
-
-				<p>Phone: (+91) 9529092055<br>
-					Whatsapp: (+91) 7276261087<br>
-				</p>
-
-			</div>
-
-		</div> <!-- /contact-info -->
-		<div class="row contact-form">
-
-			<div class="col-twelve">
-
-				<!-- form -->
-				<form name="contactForm" id="contactForm" method="post" action="">
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpPSg1rPMjgcO_TlbWUETLPQKi-fYl6LShfaAnHnVIqS38ew/viewform?embedded=true" width="650" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-				</form> <!-- Form End -->
-
-				<!-- contact-warning -->
-				<div id="message-warning">
-				</div>
-				<!-- contact-success -->
-				<div id="message-success">
-					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				</div>
-
-			</div> <!-- /col-twelve -->
-
-		</div> <!-- /contact-form -->
-
-	</section> <!-- /contact -->
-
-
-	<!-- footer
-   ================================================== -->
-
-	<footer>
-		<div class="row">
-
-			<div class="col-six tab-full pull-right social">
-
-				<ul class="footer-social">
-					<li><a href="https://www.linkedin.com/in/anand-bhagwat/"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://github.com/anandbhagwat"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://www.youtube.com/channel/UChy5rKl4un5cpNVZ_Elo13g?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
-					<li><a href="https://medium.com/@anandbhagwatt3"><i class="fa fa-medium" aria-hidden="true"></i>
-					</a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-
-			</div>
-
-			<div class="col-six tab-full">
-				<div class="copyright">
-					<span>© Copyright Kards 2016.</span>
-					<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
-				</div>
-			</div>
-
-			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-			</div>
-
-		</div> <!-- /row -->
-	</footer>
-
-	<div id="preloader">
-		<div id="loader"></div>
-	</div>
-
-	<!-- Java Script
-   ================================================== -->
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
 
 </body>
-
-</html>
-		
-
-</body>
-
 </html>
