@@ -1,133 +1,404 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>QA Марина Ложкина</title>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-	<link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-	<link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"/>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&family=Source+Sans+3:wght@300;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-
+   ym(97681920, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97681920" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta charset="utf-8"/>
+    <title>Marina - QA Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/004.jpg">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- MK Lightbox -->
+    <link href="css/mklb.css" rel="stylesheet" type="text/css"/>
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Slider -->
+    <link href="css/tiny-slider.css" rel="stylesheet"/>
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt"/>
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
 </head>
-<body>
-	<header>
-        <div class="logo">
-            <!-- <img src="imagine\qa_jones.png" alt=""> -->
+
+<body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#navbar-navlist">
+<!-- Loader -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
         </div>
-        <button class="nav-toggle" arial-lavel="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav_item"><a href="#Главная" class="nav__link">Главная</a></li>
-                <li class="nav_item"><a href="#Главная" class="nav__link">Скиллы</a></li>
-                <li class="nav_item"><a href="#Обо" class="nav__link">Обо мне</a></li>
-                <li class="nav_item"><a href="#Опыт" class="nav__link">Опыт</a></li>
-                <li class="nav_item"><a href="#Специализация" class="nav__link">Специализация</a></li>
-                <li class="nav_item"><a href="#Контакты" class="nav__link">Контакты</a></li>
+    </div>
+</div>
+<!-- Loader -->
+
+<!-- Navbar Start -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+    <div class="container">
+        <!-- Logo container-->
+        <a class="logo navbar-brand" href="#">Марина</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button><!--end button-->
+
+        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+            <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Главная</a>
+                </li><!--end nav item-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Навыки и стек</a>
+                </li><!--end nav item-->
+        
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li><!--end nav item-->
             </ul>
-        </nav>
-    </header>
-
-    <!-- Introduction -->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Привет, я <strong> Марина Ложкина </strong>
-	     для друзей и коллег я <strong> Ложка 🥄 </strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">QA Engineer</p>
-	    <img src="imagine/qa-jones-01.jpg" alt="Фото" style="max-width: 200px; border-radius: 50%;">
-    </section>
-
-
-    <!-- My Services -->
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">Скиллы</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Навыки и стек </h3>
-		     <h3> В своей работе я активно использую следующие инструменты и технологии:</h3>
-                <p><b>Developer Tools</b> <i>(в браузере)</i> / <b></b> 
-                   / <b>Postman</b> 
-                   / <b>MySQL</b> 
-                   / <b>REST-API, SOAP</b> 
-		<b>Yandex Tracker, Trello</b> 
-		<b> HTML, CSS</b></p>
-		   
-
-		    
-            </div> <!-- / service -->
-
-
-        <a href="#work" class="btn"></a>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-me" id="обо">
-        <h2 class="section__title section_title--обо">Кто я</h2>
-        <p class="section__subtitle section__subtitle--обо">QA Engineer</p>
-
-        <div class="about-me__body">
-            <p> У меня есть "уникальный" навык - способность находить баги даже там, где их нет, предугадывать поведение пользователей и предсказывать сбои до их появления. Люблю разгадывать загадку сложных систем, бороться с невидимыми врагами кода, спасать проекты от краха. </p>
-		<p> Привыкла к прозвищу "Ложка" больше, чем к своему имени. Есть 2 хвостатых ребенка. Замужем за своей работой. А когда работа не видит - я превращаюсь в творческую фею: вяжу, плету из бисера, вышиваю, косо поглядываю на макраме. Люблю играть в настолки и в "Растения против Зомби". </p>
         </div>
+    </div><!--end container-->
+</nav><!--end navbar-->
+<!-- Navbar End -->
 
-        <img src="imagine\qa-jones-03.jpg" alt="Jложка" class="обо-мне__img">
-    </section>
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--my-work">Опыт</h2>
-        <p class="section__subtitle"></p>
-
-        <div class="portfolio">
-            <div class="portfolio__item portfolio__item--mtrls">
-                <a href="https://www.materialise.com/en"><img src="imagine/materialise-logo.png" alt="materialise" class="portfolio__img portfolio__img--mtrls"></a>
-                <h3 class="section__title--role">QA Engineer</h3>
-                <ul>
-                    <li>Более 2 лет поиска идеальных дефектов в самых неожиданных местах</li>
-                </ul>
+<!-- Hero Area -->
+<div class="hero-area position-relative bg-half-120" style="background-image:url('images/003.jpg')"
+     data-jarallax='{"speed": 0.5}' id="home">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12 align-items-center text-center">
+                <div class="title-heading mt-4 pb-60">
+                    <img src="images/002.jpg" class="img-fluid rounded-circle" alt="">
+                    <h1 class="heading font-36 text-white mt-4">Привет, я - Марина</h1>
+                    <h6 class="designation mb-3 text-white">Я - QA engineer <span id="tester" class="text-primary">Тестировщик ПО</span>
+                    </h6>
+                </div>
             </div>
-            
-    
         </div>
-    </section>
+    </div>
+</div>
 
-    <!-- Ecperience section -->
-    <section class="education education__cources" id="Специализация">
-        <h2 class="section__title sectin_title--education">Специализация</h2>
-   >
-        <div class="education__body education__body--специализация"
-            <ul>
-                <li>Ручное тестирование, исследование интерфейсов, вскрытие скрытых ошибок</li>
-            </ul>
-        </div>
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card public-profile border-0 rounded shadow no-margin" style="z-index: 1;">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-4 text-md-start">
+                                <!--<img src="images/client/05.jpg" class="avatar avatar-large rounded-circle shadow d-block mx-auto" alt="">-->
+                                <div class="about-details key-feature bg-light">
+                                    <div class="media-body content">
+                                        <h6 class="title mb-2">Персональные данные</h6>
+                                        <div class="bor-bottom mt-2 mb-2"></div>
+                                        <p class="text-muted mb-2 mt-3 font-14">E-mail: marinadespoon@gmail.com</p>
+                                        <p class="text-muted mb-0 font-14">Национальность: Россия</p>
+                                    </div>
+                                </div>
+                            </div>
 
-        <img src="imagine\qa-jones-04.jpg" alt="lozhka" class="education__img">
-    </section>
+                            <div class="col-lg-9 col-md-8">
+                                <div class="row align-items-end">
+                                    <div class="col-md-12 text-md-start mt-4 mt-sm-0">
+                                        <h4 class="heading me-2">Я —
+                                            <span id="typed" class="text-primary"></span>
+                                        </h4>
+                                        <p class="text-light-muted mt-2">Я — QA engineer, тестировщик в области функционального и нефункционального
+                                            тестирования программного обеспечения, включая тестирование десктопных
+                                            приложений и веб-сайтов,
+                                            тестирования UI/UX, API</p>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section -->
 
-   
 
-    <!-- Footer -->
-    <footer class="footer" id="Контакты">
-        <a href="mailto:marinadespoon@gmail.com" class="footer__link">marinadespoon@gmail.com</a>
-        </ul>
-    </footer>
+<!-- Service Start -->
+<section class="section bg-light" id="services">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title mb-4">Навыки и стек</h2>
+                        <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Во время работы я
+                            использую следующий стек инструментов и технологий:</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="monitor" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Developer Tools в браузере</h3>
+                        <p class="text-light-muted mb-4">Для тестирования front-части web-приложений</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="feather" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Postman</h3>
+                        <p class="text-light-muted mb-4">Для тестирования API и написания автотестов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="disc" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Swagger</h3>
+                        <p class="text-light-muted mb-4">Для тестирования API и документации по API</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="layout" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">MySQL</h3>
+                        <p class="text-light-muted mb-4">Просмотр данных в БД и написание SQL-запросов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="watch" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">REST-API, SOAP</h3>
+                        <p class="text-light-muted mb-4">Использование в процессе тестирования обмена данными</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Yandex Tracker</h3>
+                        <p class="text-light-muted mb-4">Организация ежедневной работы и написание багрепортов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Test IT</h3>
+                        <p class="text-light-muted mb-4">Написание тест-кейсов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Charles</h3>
+                        <p class="text-light-muted mb-4">Тестирование front-end / back-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Kibana</h3>
+                        <p class="text-light-muted mb-4">Просмотр логов приложений</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">HTML, CSS</h3>
+                        <p class="text-light-muted mb-4">Тестирование front-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Figma</h3>
+                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="target" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Pixel perfect</h3>
+                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
+                    </div>
+                </div>
+            </div>
 
 
-    <script src="script/index.js"></script>
+        </div><!-- end row -->
+    </div>
+</section>
+<!-- End Start -->
 
+<!-- Contact Start -->
+<section class="section pb-0" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title text-capitalize mb-4">Мои контакты</h2>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="phone" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Телефон</h5>
+                        <a href="tel:+79953126230" class="text-primary">+79953126230</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="Telegram" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Telegram</h5>
+                        <a href="mailto:@lozhka_dig<" class="text-primary">@lozhka_dig</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="map-pin" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Локация</h5>
+                        <p class="text-light-muted">Россия</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+
+<footer class="footer footer-bar bg-black">
+    <div class="container text-foot text-center">
+        <p class="mb-0 text-white-50">©
+            <script>document.write(new Date().getFullYear())</script>
+            Ложка🥄</p>
+    </div><!--end container-->
+</footer><!--end footer-->
+<!-- Footer End -->
+
+<a href="javascript: void(0);" class="back-to-top btn btn-icon btn-soft-primary" id="back-to-top"
+   onclick="topFunction()">
+    <i data-feather="arrow-up" class="icons"></i>
+</a>
+<!-- Back to top -->
+
+<!-- Javascript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Slider -->
+<script src="js/tiny-slider.js "></script>
+<script src="js/tiny-slider-init.js "></script>
+
+<!-- MK Lightbox -->
+<script src="js/mklb.js"></script>
+
+<!-- Contact -->
+<script src="js/contact.js"></script>
+
+<!-- Counter init -->
+<script src="js/counter.init.js"></script>
+
+<!-- Feather icon -->
+<script src="js/feather.min.js"></script>
+
+<!-- Parallax -->
+<script src="js/parallax.js"></script>
+
+<!-- Typed -->
+<script src="js/typed.js"></script>
+<script src="js/typed.init.js"></script>
+
+<!-- Switcher -->
+<script src="js/switcher.js"></script>
+
+<!-- Main Js -->
+<script src="js/app.js"></script>
 
 </body>
 </html>
